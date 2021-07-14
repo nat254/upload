@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
 
-    <style>
+     <style>
 
         form{
             width: 600px;
@@ -32,17 +32,17 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Listings</a>
+      <a class="nav-item nav-link" href="{{ Route('dash') }}">Dashboard</a>
       <a class="nav-item nav-link" href="#">Profile</a>
       <!--<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
     </div>
   </div>
 </nav>
-    
+
 <form method="POST" action="{{url('my-upload')}}" enctype="multipart/form-data">
     @csrf
 <input type="file" name="file"><br><br>
-      
+
      <div class="progress">
         <div class="bar"></div>
         <div class="percent">0%</div>

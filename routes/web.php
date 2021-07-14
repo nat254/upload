@@ -19,3 +19,5 @@ Route::get('/', function () {
 
 Route::view('/upload','upload');
 Route::post('/my-upload',[UploadFileController::class, 'upload']);
+
+Route::view('dashboard/upload','dashboard')->name('dash');

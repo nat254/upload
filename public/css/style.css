@@ -1,0 +1,14 @@
+form{
+    width: 600px;
+    margin: 100px auto;
+    border:2px solid black;
+    padding:20px;
+}
+
+body{
+    background-color: #90EE90;
+}
+
+.headers{
+    background-color: aqua;
+}

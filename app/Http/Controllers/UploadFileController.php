@@ -8,7 +8,7 @@ use App\Models\MyPost;
 
 class UploadFileController extends Controller
 {
-    
+
     public function upload(Request $res){
 
         $res->validate([
@@ -26,6 +26,11 @@ class UploadFileController extends Controller
         return response()->json([
             'success'=>'File uploaded successfully'
         ]);
+    }
+
+    protected  function registered(Request $request, $user)
+    {
+        return redirect()->route('dashboard');
     }
 
 
